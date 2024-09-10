@@ -41,7 +41,7 @@ void iris()
 
     // fit cosmetic
     f1->SetLineColor(2);
-    f1->SetLineWidth(2);
+    f1->SetLineWidth(8);
 
     h1->Draw();
     f1->Draw("same");
