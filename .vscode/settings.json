@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "histos.C": "cpp"
+        "histos.C": "cpp",
+        "histo2.C": "cpp"
     }
 }
