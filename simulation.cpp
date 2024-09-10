@@ -1,5 +1,3 @@
-// multiple simulations
-
 #include <iostream>
 #include <vector>
 #include <array>
@@ -11,7 +9,7 @@
 bool isPositiveInteger(const std::string &str)
 {
     // Check for a minus sign at the beginning (probably useless)
-    size_t start = 0;
+    size_t start{0};
     if (str[0] == '-')
     {
         return false;
@@ -82,7 +80,7 @@ int main(int argc, char *argv[])
         std::array<Box, 100> boxes;
 
         std::vector<int> numbers{};
-        for (int i = 0; i < 100; ++i)
+        for (int i{0}; i < 100; ++i)
         {
             numbers.push_back(i);
         }
@@ -99,7 +97,7 @@ int main(int argc, char *argv[])
 
         bool all_succeed{true};
 
-        for (int i = 0; i < 100; ++i)
+        for (int i{0}; i < 100; ++i)
         {
             int counter{0}; // counter of opened boxes
             int j{i};
