@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    for (int sim = 0; sim < n_simulations; ++sim)
+    for (int sim{0}; sim < n_simulations; ++sim)
     {
         std::array<Box, 100> boxes;
 
