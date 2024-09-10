@@ -24,6 +24,15 @@ void iris()
 
     inputFile.close();
 
+    // histogram cosmetic
+    h1->SetFillColor(38);
+    h1->SetFillStyle(3001);
+    h1->SetLineColor(9);
+    h1->SetLineWidth(2);
+    h1->SetTitle("Distribuzione del primo prigioniero a fallire");
+    h1->GetXaxis()->SetTitle("Numero del prigioniero");
+    h1->GetYaxis()->SetTitle("Occorrenze");
+
     h1->Draw();
     std::cout << "Overflow: " << h1->GetBinContent(range + 1) << '\n';
 }
